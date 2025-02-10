@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>blog preview card</title>
+  </head>
+  <body>
+    <div class="container">
+      <img src="illustration-article.svg" alt="illustration-article" />
+      <h4 class="learning">Learning</h4>
+      <h5>Published 21 Dec 2023</h5>
+      <h2>HTML & CSS foundations</h2>
+      <p>
+        These languages are the backbone of every website, defining structure,
+        content, and presentation.
+      </p>
+      <img class="avatar" src="image-avatar.webp" alt="image-avatar" />
+      <h4 class="name">Greg Hooper</h4>
+    </div>
+  </body>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      width: 100%;
+      margin: 0;
+      background-color: hsl(47, 88%, 63%);
+      display: grid;
+      place-items: center;
+    }
+    @font-face {
+      font-family: Italic;
+      src: url(Figtree-Italic-VariableFont_wght.ttf);
+    }
+    @font-face {
+      font-family: Variable;
+      src: url(Figtree-VariableFont_wght.ttf);
+    }
+    .container {
+      background-color: hsl(0, 0%, 100%);
+      width: 355px;
+      margin-top: 150px;
+      padding-top: 20px;
+      padding-left: 20px;
+      padding-bottom: 28px;
+      border-radius: 20px;
+      border: 1px solid black;
+      box-shadow: 7px 7px black;
+    }
+    img {
+      border-radius: 12px;
+    }
+    .learning {
+      color: hsl(0, 0%, 7%);
+      background-color: hsl(47, 88%, 63%);
+      width: 80px;
+      text-align: center;
+      font-family: Variable;
+      font-weight: 800;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 14px;
+      border-radius: 4px;
+      margin-top: 20px;
+      margin-bottom: 15px;
+    }
+    h5 {
+      font-family: Variable;
+      margin-bottom: 15px;
+      font-weight: 500;
+    }
+    h2 {
+      font-family: Variable;
+      font-weight: 800;
+      margin-bottom: 20px;
+    }
+    p {
+      font-family: Variable;
+      color: hsl(0, 0%, 42%);
+      line-height: 24px;
+      margin-bottom: 20px;
+    }
+    .avatar {
+      width: 35px;
+    }
+    .name {
+      float: right;
+      margin-right: 220px;
+      margin-top: 8px;
+      font-family: Variable;
+      font-weight: 800;
+      font-size: 14px;
+    }
+  </style>
+</html>
